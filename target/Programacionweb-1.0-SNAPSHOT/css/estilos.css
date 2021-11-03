@@ -506,10 +506,13 @@ main .sobre-nosotros{
     }
 
     .titulo-final{
-        font-size: 10;
+        font-size: 10px;
     }
 }
 
+.containerlogin{
+    width: 50px;
+}
 
 .fadeInDown {
     -webkit-animation-name: fadeInDown;

@@ -402,7 +402,7 @@
                 </div>
                 <div class="modal-body">
 
-                    <form class="was-validated" name="inscripcion" action="inscripciones.jsp" method="post">
+                    <form class="was-validated" name="inscripcion" action="inscripcion.jsp" method="post">
                         <div class="mb-3 col-12 fadeIn first">
                             <label for="nombreEst" class="form-label">Nombre del estudiante</label>
                             <input type="text" class="form-control is-invalid" id="nombreEst" name="nombreEst" aria-describedby="emailHelp" required>
