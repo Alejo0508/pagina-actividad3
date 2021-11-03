@@ -1,7 +1,6 @@
 window.addEventListener('load', function () {
 
         var checkbox = document.getElementById("terminos2").value
-        console.log(checkbox)
 
         if(checkbox === "1"){
             document.getElementById("terminos").click();
