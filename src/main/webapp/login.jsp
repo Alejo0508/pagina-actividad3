@@ -112,9 +112,8 @@
 
             <form action="datosEstudiante.jsp" method="get" id="formLogin">
                 <input type="text" id="usuario" class="fadeIn second mb-4" name="usuario" placeholder="Usuario">
-                <input type="text" id="clave" class="fadeIn third mb-3" name="clave" placeholder="Clave">
-                <input type="button" class="fadeIn fourth" id="login" value="Iniciar sesion">
-
+                <input type="password" id="clave" class="fadeIn third mb-3" name="clave" placeholder="Clave">
+                <input type="button" class="fadeIn fourth" onclick="login()" value="Iniciar sesion">
             </form>
 
 

@@ -6,30 +6,29 @@ window.addEventListener('load', function () {
             document.getElementById("terminos").click();
     }
 
-
-    document.getElementById("login").addEventListener('click', function () {
-
-        var usuario = document.getElementById("usuario").value;
-        var clave = document.getElementById("clave").value;
-        var bandera = false;
-
-        if (usuario.length > 0 && clave.length > 0){
-            bandera = true
-
-        }
-
-        if (bandera){
-            document.getElementById("formLogin").submit();
-        }else{
-            var toastLiveExample = document.getElementById('liveToast')
-                    var toast = new bootstrap.Toast(toastLiveExample)
-                    toast.show()
-        }
-    })
-
 })
 
-document.getElementById("modificar").addEventListener('click', function () {
+function login(){
+    var usuario = document.getElementById("usuario").value;
+    var clave = document.getElementById("clave").value;
+    var bandera = false;
+
+    if (usuario.length > 0 && clave.length > 0){
+        bandera = true
+    }
+
+    if (bandera){
+        document.getElementById("formLogin").submit();
+    }else{
+        var toastLiveExample = document.getElementById('liveToast')
+        var toast = new bootstrap.Toast(toastLiveExample)
+        toast.show()
+    }
+
+}
+
+
+function modificarD(){
     document.getElementById("guardar").hidden = false;
     document.getElementById("modificar").hidden = true;
 
@@ -40,14 +39,13 @@ document.getElementById("modificar").addEventListener('click', function () {
     document.getElementById("contactoResp").readOnly = false;
     document.getElementById("claveUsu").readOnly = false;
     document.getElementById("nomUsuario").readOnly = false;
-})
+}
 
-document.getElementById("guardar").addEventListener('click', function () {
+function guardar() {
 
     var nombre1 = document.getElementById("nombre").value;
     var usuario1 = document.getElementById("nomUsuario").value;
     var bandera = false;
-
 
     if (nombre1.length > 0){
         bandera = true
@@ -63,10 +61,10 @@ document.getElementById("guardar").addEventListener('click', function () {
         var toast = new bootstrap.Toast(toastLiveExample)
         toast.show()
     }
-})
+}
 
-document.getElementById("cancelar").addEventListener('click', function () {
 
+function cancelar(){
     var usuario2 = document.getElementById("nomUsuario").value;
     var bandera = false;
 
@@ -80,11 +78,9 @@ document.getElementById("cancelar").addEventListener('click', function () {
         toast2.show()
         document.getElementById("formDelete").submit();
     }
-})
+}
 
-
-document.getElementById("confirmar").addEventListener('click', function () {
-
+function confirmar(){
     var usuario3 = document.getElementById("nomUsuario").value;
     var nombre3 = document.getElementById("nombre").value;
     var grado3 = document.getElementById("grado").value;
@@ -135,4 +131,4 @@ document.getElementById("confirmar").addEventListener('click', function () {
         toast3.show()
         document.getElementById("formDatos").submit();
     }
-})
+}

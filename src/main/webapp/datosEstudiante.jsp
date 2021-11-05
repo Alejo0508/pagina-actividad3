@@ -317,10 +317,10 @@
             </p>
 
             <div class="modal-footer fadeIn six">
-                <a class="btn btn-danger text-white fadeIn six mb-4 justify-content-end" id="cancelar" type="button" >Cancelar inscripción</a>
-                <a class="btn colorBoton text-white fadeIn six mb-4 justify-content-end" id="confirmar" type="button" >Confirmar datos</a>
-                <a class="btn colorBoton text-white fadeIn six mb-4 justify-content-end" id="modificar" type="button" >Modificar datos</a>
-                <a class="btn colorBoton text-white fadeIn first mb-4 justify-content-end" id="guardar" type="button" hidden>Guardar datos</a>
+                <a class="btn btn-danger text-white fadeIn six mb-4 justify-content-end" onclick="cancelar()" type="button" >Cancelar inscripción</a>
+                <a class="btn colorBoton text-white fadeIn six mb-4 justify-content-end" onclick="confirmar()" type="button" >Confirmar datos</a>
+                <a class="btn colorBoton text-white fadeIn six mb-4 justify-content-end" id="modificar" onclick="modificarD()" type="button" >Modificar datos</a>
+                <a class="btn colorBoton text-white fadeIn first mb-4 justify-content-end" id="guardar" onclick="guardar()" type="button" hidden>Guardar datos</a>
             </div>
         </div>
     </form>
